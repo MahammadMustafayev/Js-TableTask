@@ -2,14 +2,17 @@ const btn=document.getElementById("ntb-ok");
 const input=document.querySelectorAll("input");
 const tr=document.querySelector("tr");
 const table=document.querySelector("table");
+let mdlbtn=document.getElementById("modalX");
+let mdl=document.getElementById("onemodal");
+let cl=document.getElementsByClassName("close")[0];
+let cl2=document.getElementById("cl2");
+let td=document.querySelector("td");
 
 btn.addEventListener("click",function (el) {
     el.preventDefault();
     if (Del(input)) {
-        let td=document.createElement("td");
         td.classList.add("td");
         td.innerText=input.values;
-        
     }
     tr.append(td);
 })
@@ -42,6 +45,19 @@ function clY() {
     let y=document.getElementById("new-add");
     y.style.display="none";
 }
+
+
+mdlbtn.addEventListener("click",function () {
+    mdl.style.display="block";
+})
+cl.addEventListener("click",function () {
+    mdl.style.display="none";
+})
+
+cl2.addEventListener("click",function () {
+    td.parentElement.remove();
+})
+
 
 
 
