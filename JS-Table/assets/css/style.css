@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+}
+.container{
+    padding-top: 5%;
+    width: 68%;
+    height: 100vh;
+}
+.container .search{
+    float: left;
+    
+}
+.container .search i{
+     color: white;
+     font-size: 20px;
+     margin: 0 9px;
+}
+.container .search input{
+    border: 1px aquamarine;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+}
+.container .add{
+    float: right;
+    
+}
+.container .add .btn{
+    width: 150px;
+    height: 30px;
+    border: 1px solid aquamarine;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.container .add .btn i{
+    margin: 0 10px;
+}
+.table{
+  
+  border-collapse: collapse;
+  width: 100%;
+  height: 5%;
+  border: 2px solid white;
+  
+}
+.th{
+    border: 1px solid white;
+}
+.td{
+    border: 1px solid white;
+}
+.new-add{
+    width: 31.8%;
+    height: 50vh;
+    background-color:gold;
+    float: right;
+    display: none;
+}
+.new-add input{
+    width: 90%;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.new-add .ntb{
+    margin-top: 15%;
+    width: 20%;
+    height: 6vh;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-left: 15%;
+    cursor: pointer;
+}
+.new-add small{
+    margin-left: 20px;
+    color: red;
+}
+.d-none{
+    display: none;
+}
